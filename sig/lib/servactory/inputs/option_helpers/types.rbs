@@ -1,0 +1,39 @@
+module Servactory
+  module Inputs
+    module OptionHelpers
+      module Types
+        def self?.mandatory: (Symbol name, Class type) -> Servactory::Inputs::OptionHelper
+
+        def self?.not_mandatory: (Symbol name, Class type) -> Servactory::Inputs::OptionHelper
+
+        def self?.all: () -> Set[Servactory::Inputs::OptionHelper]
+
+        def self?.symbol: () -> Servactory::Inputs::OptionHelper
+
+        def self?.symbol?: () -> Servactory::Inputs::OptionHelper
+
+        def self?.string: () -> Servactory::Inputs::OptionHelper
+
+        def self?.string?: () -> Servactory::Inputs::OptionHelper
+
+        def self?.integer: () -> Servactory::Inputs::OptionHelper
+
+        def self?.integer?: () -> Servactory::Inputs::OptionHelper
+
+        def self?.float: () -> Servactory::Inputs::OptionHelper
+
+        def self?.float?: () -> Servactory::Inputs::OptionHelper
+
+        def self?.boolean: () -> Servactory::Inputs::OptionHelper
+
+        def self?.array: () -> Servactory::Inputs::OptionHelper
+
+        def self?.array?: () -> Servactory::Inputs::OptionHelper
+
+        def self?.hash: () -> Servactory::Inputs::OptionHelper
+
+        def self?.hash?: () -> Servactory::Inputs::OptionHelper
+      end
+    end
+  end
+end
